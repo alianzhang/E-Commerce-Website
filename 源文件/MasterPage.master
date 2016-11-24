@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>美可儿时尚包吧</title>
+</head>
+
+<body >
+    <form id="form1" runat="server">
+    <div align= "center">
+    <table style ="width:778px;text-align:center;"> 
+    <tr>
+    <td style="text-align:center ; width: 774px;background-position: center center; background-image: url(image/b.jpg);vertical-align: middle; width:774px; position: static;height: 200px;"><span style="font-size:24pt;font-family:Tahoma "></span></td>
+    </tr></table> 
+    </div>
+    <div align= "center">
+    <table width ="778" style ="text-align :center;text-decoration:none;text-align: center" >
+    <tr>
+    <td style ="width:118px;height:297px;font-size:9pt; text-align: center"valign="top"><br/>
+    <table style="font-size :9pt;height:183px;width:120px; text-align: center;">
+    <tr><td style="width:114px; border-right: #ffcccc thin ridge; border-top: #ffcccc thin ridge; border-left: #ffcccc thin ridge; border-bottom: #ffcccc thin ridge; background-image: url(image/aa.jpg);"><a href="default.aspx ">网站首页</a></td></tr>
+    <tr><td style="width:114px; border-right: #ffcccc thin ridge; border-top: #ffcccc thin ridge; border-left: #ffcccc thin ridge; border-bottom: #ffcccc thin ridge;background-image: url(image/bb.jpg);"><a href="more.aspx ">新品展示</a></td></tr>
+    <tr><td style="width:114px; border-right: #ffcccc thin ridge; border-top: #ffcccc thin ridge; border-left: #ffcccc thin ridge; border-bottom: #ffcccc thin ridge;background-image: url(image/aa.jpg);"><a href="search.aspx ">搜索宝贝</a></td></tr>
+    <tr><td style="width:114px; border-right: #ffcccc thin ridge; border-top: #ffcccc thin ridge; border-left: #ffcccc thin ridge; border-bottom: #ffcccc thin ridge;background-image: url(image/bb.jpg);"><a href="crystal.aspx ">店铺介绍</a></td></tr>
+    <tr><td style="width:114px; border-right: #ffcccc thin ridge; border-top: #ffcccc thin ridge; border-left: #ffcccc thin ridge; border-bottom: #ffcccc thin ridge;background-image: url(image/aa.jpg);"><a href="aboutus.aspx ">联系我们</a></td></tr>
+    </table>
+    包吧搜索:<asp:TextBox ID ="strTitle" runat ="server" Width ="103px" BackColor="#ffcccc" style="background-color: #ffcccc"></asp:TextBox>
+    <asp:Button ID ="Button1" runat ="server" OnClick ="Button1_Click" Text ="搜索" />
+    <br/>
+    <table >
+    <tr><td bgcolor="#ffcccc" colspan ="2" style="background-color: #ffcccc"><span style="font-size :9pt">管理员登陆</span></td>
+    </tr><tr><td style ="width :160px"> 用户</td>
+    <td style ="width :20px"><asp:TextBox ID ="txtName" runat ="server" Width ="60px"></asp:TextBox></td>
+    </tr>
+    <tr><td style ="width:160px">密码</td>
+    <td style ="width:20px"><asp:TextBox ID ="txtPwd" runat="server" TextMode ="Password" Width ="60px"></asp:TextBox></td>
+    
+    </tr>
+    <tr><td style ="width :160px"><img src ="CheckCode.aspx" alt ="验证码" style ="width :48px;height:25px" /></td>
+    <td style ="width:20px"><asp:TextBox ID ="checkCode" runat ="server" Width ="60px"></asp:TextBox></td>
+    </tr>
+    <tr><td colspan ="2">
+        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl ="~/image/login.gif" OnClick ="ImageButton1_Click"/>&nbsp;  
+    </td>
+    </tr>
+    </table>
+    </td>
+    <td style ="height:297px;border-right:#ffoocc thin groove;border-top:#ffoocc thin groove;border-left:#ffoocc thin groove;border-bottom:#ffoocc thin groove;"align="center" valign ="top">
+    <asp:ContentPlaceHolder ID ="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+    </td>
+    </tr>
+    </table></div>
+    <div align= "center">
+    <table width ="778" >
+    <tr><td bgcolor="#ffcccc" style="text-align :center ; height: 80px; background-color: #ffcccc;" align="center">
+    <span style="font-size :9pt">美可儿时尚包吧版权所有</span>
+    </td>
+    </tr>
+    </table></div>
+    </form>
+    
+</body>
+</html>
